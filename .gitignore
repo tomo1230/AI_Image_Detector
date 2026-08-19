@@ -1,0 +1,16 @@
+# 依存・ビルド成果物
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# ローカル設定
+.claude/settings.local.json
+.env
+.env.*
+
+# モデル一式(重み351MB。tools/convert/convert_convnext.py で生成・取得する)
+public/models/
+
+# 開発ツールが残すローカルDB
+data/

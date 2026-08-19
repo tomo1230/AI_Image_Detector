@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI画像チェッカー</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>AI画像チェッカー</h1>
+        <p>画像がAI生成かどうかを推定します。すべて端末内で処理し、画像は外部に送信しません。</p>
+      </header>
+
+      <section id="drop" class="drop">
+        画像をドロップ / クリックして選択 / 貼り付け(Ctrl+V)
+      </section>
+      <input id="file" type="file" accept="image/*" hidden />
+
+      <section id="model-status" class="model-status"></section>
+
+      <section id="preview"></section>
+      <section id="result"></section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
